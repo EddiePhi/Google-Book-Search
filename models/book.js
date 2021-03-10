@@ -1,4 +1,5 @@
-//Referencing WK-21, Act 03-Stu_AJAXBooks
+// Referencing code from JoelDore: https://github.com/JoelDore/goog-reads/
+// Referencing code from WK21-Act 05
 
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;

@@ -1,26 +1,21 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
+// Referencing code from JoelDore: https://github.com/JoelDore/goog-reads/
+// Referencing code from WK21-Act 05
+
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Nav from './components/OurNav';
+import Jumbotron from './components/Jumbotron'
+import Saved from './pages/Saved'
+import Search from './pages/Search'
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="App">
         <Nav />
-        <Switch>
-          <Route exact path={["/", "/books"]}>
-            <Books />
-          </Route>
-          <Route exact path="/books/:id">
-            <Detail />
-          </Route>
-          <Route>
-            <NoMatch />
-          </Route>
-        </Switch>
+        <Jumbotron />
+        <Route exact path={['/', '/search']} component={Search} />
+        <Route exact path='/saved' component={Saved} />
       </div>
     </Router>
   );

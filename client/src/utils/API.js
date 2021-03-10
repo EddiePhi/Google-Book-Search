@@ -1,3 +1,6 @@
+// Referencing code from JoelDore: https://github.com/JoelDore/goog-reads/
+// Referencing code from WK21-Act 05
+
 import axios from "axios";
 
 export default {
@@ -16,5 +19,9 @@ export default {
   // Saves a book to the database
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
-  }
+  },
+  // Gets books from Google Books by search query
+  getGoogleBooks: function(query) {
+  return axios.get(`/api/googlebooks/${query}`)
+}
 };

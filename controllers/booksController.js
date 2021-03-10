@@ -1,3 +1,6 @@
+// Referencing code from JoelDore: https://github.com/JoelDore/goog-reads/
+// Referencing code from WK21-Act 05
+
 const db = require("../models");
 
 // Defining methods for the booksController

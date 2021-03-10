@@ -1,14 +1,15 @@
-import React from "react";
+// Referencing code from JoelDore: https://github.com/JoelDore/goog-reads/
+// Referencing code from WK21-Act 05
 
-function Jumbotron({ children }) {
+import React from "react";
+import { Jumbotron } from "react-bootstrap";
+
+export default function OurJumbotron() {
   return (
-    <div
-      style={{ height: 300, clear: "both", paddingTop: 120, textAlign: "center" }}
-      className="jumbotron"
-    >
-      {children}
-    </div>
+    <Jumbotron className="text-center position-relative">
+      <h1 style={{ fontWeight: "300" }}>
+        Google Book Search
+      </h1>
+    </Jumbotron>
   );
 }
-
-export default Jumbotron;
