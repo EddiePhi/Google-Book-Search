@@ -25,15 +25,15 @@ export default function BookCard({ bookData, handleSave, handleDelete }) {
 
                         {/* accomodate database vs. Google Books structures */}
                         <a href={bookData.infoLink || bookData.link} target="_blank" rel="noreferrer">
-                            <Button size="sm" className="bg-googreads rounded-0 mx-1">View</Button>
+                            <Button size="sm" className="rounded-0 mx-1">View</Button>
                         </a>
                         {
                             handleSave &&
-                            <Button size="sm" className="bg-googreads rounded-0 mx-1" onClick={() => handleSave(bookData)}>Save</Button>
+                            <Button size="sm" className="rounded-0 mx-1" onClick={() => handleSave(bookData)}>Save</Button>
                         }
                         {
                             handleDelete &&
-                            <Button size="sm" className="bg-googreads rounded-0 mx-1" onClick={() => handleDelete(bookData._id)}>Delete</Button>
+                            <Button size="sm" className="rounded-0 mx-1" onClick={() => handleDelete(bookData._id)}>Delete</Button>
                         }
                     </Col>
                 </Row>

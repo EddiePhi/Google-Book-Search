@@ -2,7 +2,7 @@
   "name": "google-books-search",
   "version": "1.0.0",
   "description": "",
-  "proxy":"localhost:3000/",
+  "proxy":"http://localhost:3000/",
   "keywords": [],
   "main": "index.js",
   "dependencies": {

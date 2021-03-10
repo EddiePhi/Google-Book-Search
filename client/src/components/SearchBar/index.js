@@ -15,7 +15,7 @@ export default function SearchBar({ handleSearch, inputRef }) {
           placeholder="Ex: Slaughterhouse Five"
         />
       </Form.Group>
-      <Button type="submit" className="bg-googreads rounded-0">
+      <Button type="submit" className="rounded-0">
         Search
       </Button>
     </Form>
